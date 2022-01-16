@@ -1,0 +1,72 @@
+{
+	"name": "phoneview",
+	"displayName": "PhoneView",
+	"description": "",
+	"version": "0.0.1",
+	"publisher": "npsulav",
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/npsulav/PhoneView"
+	},
+	"author": {
+	  "name": "Sulav Parajuli",
+	  "email": "sulavparajuli07@gmail.com"
+	},
+	"engines": {
+	  "vscode": "^1.63.0"
+	},
+	"categories": [
+	  "Other"
+	],
+	"activationEvents": [
+	  "onCommand:phoneview.start"
+	],
+	"main": "./extension.js",
+	"keywords": [
+	  "responsive",
+	  "mobile view",
+	  "phone view",
+	  "browser",
+	  "phone",
+	  "iphone",
+	  "iphone x",
+	  "emulator",
+	  "simulator"
+	],
+	"contributes": {
+	  "menus": {
+		"editor/title": [
+		  {
+			"command": "phoneview.start",
+			"title": "Start",
+			"alt": "phoneview.start",
+			"group": "navigation"
+		  }
+		]
+	  },
+	  "commands": [
+		{
+		  "command": "phoneview.start",
+		  "title": "Open a PhoneView Tab",
+		  "category": "Phone View"
+		}
+	  ]
+	},
+	"scripts": {
+	  "lint": "eslint .",
+	  "pretest": "npm run lint",
+	  "test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+	  "@types/glob": "^7.2.0",
+	  "@types/mocha": "^9.0.0",
+	  "@types/node": "14.x",
+	  "@types/vscode": "^1.63.0",
+	  "@vscode/test-electron": "^2.0.3",
+	  "eslint": "^8.6.0",
+	  "glob": "^7.2.0",
+	  "mocha": "^9.1.3",
+	  "typescript": "^4.5.4"
+	}
+  }
+  
