@@ -206,7 +206,7 @@ function getWebviewContent() {
       <div class="smartphone">
         <div class="content">
           <iframe
-            src="http://crisps.tech"
+            src="https://www.example.com"
             id="webview"
             style="width: 100%; border: none; height: 100%;"
           />
