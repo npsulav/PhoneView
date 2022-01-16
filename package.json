@@ -4,6 +4,7 @@
 	"description": "",
 	"version": "0.0.1",
 	"publisher": "npsulav",
+	"icon": "media/ic.png",
 	"repository": {
 	  "type": "git",
 	  "url": "https://github.com/npsulav/PhoneView"
